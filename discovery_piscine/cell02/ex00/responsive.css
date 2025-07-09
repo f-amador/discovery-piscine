@@ -1,0 +1,38 @@
+body, html
+{
+    margin: 0;
+    overflow: hidden;
+}
+.table-container
+{
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+td
+{
+    padding: 20px;
+    vertical-align: center;
+    font-size: clamp(14px, 2vw, 20px); /* Responsive font size */
+    text-align: justify;
+    hyphens: auto; /* Better word breaking */
+}
+
+.table-left
+{
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #8B4513;
+    background-color: #cf783e;
+    color: #2c1502;
+    width: 50%;
+}
+
+.table-right
+{
+    font-family: 'Garamond', serif;
+    border: 2px solid #4d4d4d;
+    background-color: #742aad;
+    color: #e6d9f2;
+    width: 50%;
+}
