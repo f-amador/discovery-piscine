@@ -48,3 +48,8 @@ h1
 {
 	background: #a00230;
 }
+
+#dropdown option:hover
+{
+    background: pink;
+}

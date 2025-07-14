@@ -1,0 +1,78 @@
+body {
+	text-align: center;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+}
+
+#doflamingo-title
+{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 5rem;
+	color: transparent;
+	background: linear-gradient(45deg, #800020, #e60000, #ffcc00, #8000);
+	-webkit-background-clip: text;
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+	letter-spacing: 5px;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	/* display: inline-block; */
+	text-transform: uppercase;
+	animation: doflamingo-glow 3s infinite alternate;
+
+}
+
+@keyframes doflamingo-glow
+{
+	from 
+	{
+		text-shadow: 0 0 30px #e60000, 0 0 30px #ffcc00;
+
+	}
+	to
+	{
+        text-shadow: 0 0 0px #e60000, 0 0 0px #ff0000, 0 0 0px  #ffcc00;
+    }
+}
+
+#doflamingo-title::after {
+    content: "👑";
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    font-size: 3rem;
+    transform: rotate(20deg);
+    filter: drop-shadow(2px 2px 0px black);
+	z-index: -1;
+}
+#king-button
+{
+	padding: 15px 30px;
+	background: linear-gradient(to right, #800020, #e60000);
+	color: white;
+	border: none;
+	font-size: 20px;
+	border-radius: 0;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px black;
+	transition: all 0.3s;
+}
+
+#king-button:hover
+{
+	background: linear-gradient(to right, rgb(255, 94, 212), rgb(114, 4, 117));
+	transform: translate(300px, 300px);
+}
+
+@media (max-width: 900px) {
+	#doflamingo-title {
+		font-size: 2rem;
+	}
+}

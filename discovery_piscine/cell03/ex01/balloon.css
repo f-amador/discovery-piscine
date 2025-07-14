@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margins */
+    background-color: pink;
+}
+
+#balloon {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 100%;
+    /* Optional royal enhancements */
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+	vertical-align: middle;
+	text-align: center;
+	align-items: center;
+    animation: float 3s infinite ease-in-out;
+	border: 2px red;
+}
+
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
